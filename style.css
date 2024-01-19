@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #74c35a;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.msgwlecome {
+  margin-bottom: 50px;
+  color: #6b6b6b;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.form-task,
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+
+.tasks {
+  display: none;
+}
+
+#txt_username,
+#txt_password,
+#txt_task {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  outline-width: 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+#btn_submit,
+#btn_add,
+.btn {
+  background-color: #00b242;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+#btn_submit {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+}
+.form-task {
+  border-radius: 4px;
+  align-items: normal;
+}
+.lists {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(53 * 4px);
+}
+.task {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #535353;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+#btn_add {
+  background-color: #337ab7;
+  border-radius: 4px;
+  width: 20%;
+  padding: 14px 20px;
+}
+#txt_task {
+  width: 60%;
+}

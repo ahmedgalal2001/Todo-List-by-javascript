@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- start main element -->
+    <div class="main">
+        <p class="msgwlecome" id="msgwlecome"></p>
+        <!-- start form element -->
+        <div id="form-login" class="form-login">
+            <form>
+                <input type="text" id="txt_username" placeholder="Username">
+                <input type="password" id="txt_password" placeholder="Password">
+            </form>
+            <button id="btn_submit">CREATE ACCOUNT</button>
+        </div>
+        <!-- end form element -->
+        <!-- start tasks element -->
+        <div id="tasks" class="tasks">
+            <button id="btn_logout" class="btn" style="padding: 10px;background-color:#CB0909 ;">Log Out</button>
+            <div id="form-task" class="form-task">
+                <div id="lists" class="lists">
+                </div>
+                <form>
+                    <label for="txt_task">Task</label>
+                    <input type="text" id="txt_task" placeholder="task name">
+                    <button id="btn_add">Add</button>
+                </form>
+            </div>
+        </div>
+        <!-- end tasks element -->
+    </div>
+    <!-- end main element -->
+    <script src="control.js"></script>
+    <script src="User.js"></script>
+    <script src="Task.js"></script>
+</body>
+
+</html>
